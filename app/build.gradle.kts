@@ -9,8 +9,8 @@ android {
 
     defaultConfig {
         applicationId = "apps.sumit.mlkit"
-        minSdk = 33
-        targetSdk = 34
+        minSdk = 31
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
@@ -66,4 +66,17 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // image helper
+    implementation("io.coil-kt:coil-compose:2.6.0")
+
+    // doc scanner
+    implementation("com.google.android.gms:play-services-mlkit-document-scanner:16.0.0-beta1")
+
+    // navigation
+    implementation("androidx.navigation:navigation-compose:2.7.7")
+
+    // permission related task
+    implementation("com.google.accompanist:accompanist-permissions:0.34.0")
+
 }
