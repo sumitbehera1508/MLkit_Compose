@@ -36,7 +36,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.rememberNavController
 import apps.sumit.mlkit.ui.theme.MLKitTheme
+import apps.sumit.mlkit.util.Screen
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.isGranted
 import com.google.accompanist.permissions.rememberPermissionState
@@ -127,7 +130,10 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Show() {
+    val navController = rememberNavController()
+    NavHost(navController = navController, startDestination =Screen.HomeScreen.route ){
 
+    }
 }
 
 @Preview(showBackground = true)
